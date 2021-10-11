@@ -1,0 +1,36 @@
+.cart-btn-wrapper {
+    position: relative;
+}
+
+.cart-btn {
+    background-color: rgba(31, 78, 78, 0.9);
+    border-color: rgba(31, 78, 78, 0.9);
+}
+
+.cart-btn:hover {
+    background-color: rgba(18, 44, 44, 0.9);
+    border-color: rgba(18, 44, 44, 0.9);
+}
+
+.cart-btn:active {
+    background-color: rgba(31, 78, 78, 0.9);
+    border-color: rgba(31, 78, 78, 0.9);
+}
+
+.cart-btn:focus {
+    background-color: rgba(31, 78, 78, 0.9);
+    border-color: rgba(31, 78, 78, 0.9);
+}
+
+.cart-number-icon {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    top: -5px;
+    left: -5px;
+}

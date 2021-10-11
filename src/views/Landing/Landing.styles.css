@@ -1,0 +1,100 @@
+.message-wrapper {
+    height: 95vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message-wrapper::before {
+    content: "";
+    background-image: url("../../assets/ecommerce.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+}
+
+.message {
+    position: absolute;
+    min-height: 300px;
+    background-color: rgba(31, 78, 78, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.message-wrapper h2 {
+    font-size: 4.5rem;
+    color: #fff;
+    line-height: 0.9;
+    text-align: center;
+    line-height: normal;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+    position: absolute;
+    width: 75px;
+    height: 65px;
+    margin-top: 80vh;
+}
+#more-arrows:hover polygon {
+    fill: #000;
+    transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+    transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+    transform: translateY(18px);
+}
+polygon {
+    fill: #000;
+    transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+    opacity: 0.75;
+}
+polygon.arrow-top {
+    opacity: 0.5;
+}
+
+.carousel-wrapper {
+    min-height: 50vh;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    width: 85%;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: auto;
+    vertical-align: middle;
+    margin-bottom: 100px;
+}
+
+.button-wrapper a {
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    font-size: 3rem;
+    background-color: rgba(31, 78, 78, 0.9);
+    border-color: rgba(31, 78, 78, 0.9);
+}
+
+.button-wrapper a:hover {
+    background-color: rgba(18, 44, 44, 0.9);
+    border-color: rgba(18, 44, 44, 0.9);
+}

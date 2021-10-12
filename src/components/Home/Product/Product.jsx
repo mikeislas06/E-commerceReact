@@ -8,9 +8,13 @@ import UserContext from "../../../context/UserContext";
 //Bootstrap
 import { Card, Button, Modal } from "react-bootstrap";
 
+//Fontawesome
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
 //Styles
 import "./Product.styles.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MyVerticallyCenteredModal = (props) => {
     return (
@@ -142,7 +146,7 @@ const Product = ({ name, description, price, img, id, status, stock }) => {
                                 onClick={() =>
                                     handleDispatchList({ ...payload })
                                 }>
-                                {"❤"}
+                                <FontAwesomeIcon icon={faHeart} color='red' />
                             </Button>
                         ) : (
                             <Button
@@ -150,7 +154,7 @@ const Product = ({ name, description, price, img, id, status, stock }) => {
                                 onClick={() =>
                                     handleDispatchList({ ...payload })
                                 }>
-                                {"🤍"}
+                                <FontAwesomeIcon icon={faHeart} color='white' />
                             </Button>
                         )}
                     </div>

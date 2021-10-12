@@ -25,26 +25,14 @@ const Header = ({ cart, total, session, handleLogout }) => {
                         <Nav.Link as={Link} to='/shop'>
                             Shop
                         </Nav.Link>
-                        {user.jwt ? (
-                            <>
-                                <NavDropdown
-                                    title='Shopping Cart'
-                                    id='collasible-nav-dropdown'>
-                                    <NavDropdown.Item as={Link} to='/shop-cart'>
-                                        🛒 # Items: {cart.length}
-                                    </NavDropdown.Item>
-                                    <NavDropdown.Item>
-                                        Total: $ {total > 0 ? total : "0"}
-                                    </NavDropdown.Item>
-                                </NavDropdown>
-                            </>
-                        ) : (
-                            <></>
-                        )}
                     </Nav>
                     <Nav>
                         {user.jwt ? (
                             <>
+                                <Nav.Link as={Link} to='/shop-cart'>
+                                    🛒 # Items: {cart.length} Total: ${" "}
+                                    {total > 0 ? total : "0"}
+                                </Nav.Link>
                                 <Nav.Link as={Link} to='/account'>
                                     {user.name}
                                 </Nav.Link>
